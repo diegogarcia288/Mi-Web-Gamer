@@ -221,14 +221,23 @@ body::before {
   }
 }
 
+.accordion-button {
+  background-color: #111 !important; /* Fondo negro */
+  color: #fff !important;            /* Texto blanco */
+  font-family: "Press Start 2P", cursive;
+  border: 2px solid #00ff00;         /* Opcional: borde verde neon */
+}
+
+
 .accordion-button:focus {
   border-color: #ff00ff;
   box-shadow: 0 0 10px #ff00ff;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #1f1f1f;
-  color: #00ff00;
+  background-color: #111 !important; /* Evita que cambie cuando está abierto */
+  color: #fff !important;
+  box-shadow: none;                  /* Quita el sombreado azul de Bootstrap */
 }
 
 .accordion-button:not(.collapsed) i {
@@ -252,7 +261,35 @@ body::before {
   top: 20px; /* margen desde el borde superior */
 }
 
+/* Widgets decoración */
 
+.mb-3 h5, ul, li, i{
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+}
+
+.list-unstyled a{
+  color: rgb(21, 255, 0);
+  text-decoration: none;
+}
+
+.list-unstyled a:hover{
+  color: red
+}
+
+.p-3 h5, ul{
+  font-family:"Press Start 2P", cursive;
+  text-align: center;
+}
+
+.p-3 a{
+  color: rgb(21, 255, 0);
+  text-decoration: none;
+}
+
+.p-3 a:hover{
+  color:red;
+}
 /** ------------------------------------------------------------------------------------------------- **/
 
 .footer-gamer {
