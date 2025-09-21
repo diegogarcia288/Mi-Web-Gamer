@@ -324,3 +324,43 @@ body::before {
   color: #ff00ff;
   text-shadow: 0px 0px 5px #ff00ff;
 }
+
+
+/* ========================
+   RESPONSIVE - Celulares
+   ======================== */
+@media (max-width: 768px) {
+  /* Ajustar tipografía */
+  .accordion-button {
+    font-size: 0.6rem;  /* más pequeño en móvil */
+    padding: 8px 10px;  /* menos relleno */
+  }
+
+  .accordion-body {
+    font-size: 0.55rem; /* texto interno más chico */
+    padding: 8px;
+  }
+
+  /* Contenedor general */
+  .accordion {
+    width: 95%;         /* que no se salga de la pantalla */
+    margin: auto;       /* centrado */
+  }
+
+  /* Flechita del acordeón */
+  .accordion-button::after {
+    transform: scale(0.7); /* más pequeña */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Para celulares muy pequeños */
+  .accordion-button {
+    font-size: 0.5rem;
+    padding: 6px 8px;
+  }
+
+  .accordion-body {
+    font-size: 0.5rem;
+  }
+}
